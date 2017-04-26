@@ -1,0 +1,31 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "Authentication": {
+    "Bucket": "folio-bucket",
+    "Key": "docker/dockercfg"
+  },
+  "volumes": [{
+    "name": "web-app",
+    "host": {
+      "sourcePath": "/var/app/current/web-app"
+    }
+  }],
+  "containerDefinitions": [{
+    "name": "web-app",
+    "image": "stolemyusername/folio:<TAG>",
+    "essential": true,
+    "memory": 128,
+    "portMappings": [{
+      "hostPort": 80,
+      "containerPort": 80
+    }],
+    "mountPoints": [{
+      "sourceVolume": "web-app",
+      "containerPath": "/var/www/html",
+      "readOnly": true
+    }],
+    "links": [
+      "postgres-db"
+    ]
+  }]
+}

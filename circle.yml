@@ -1,0 +1,25 @@
+machine:
+  python:
+    version: 2.7.3
+  services:
+    - docker
+
+dependencies:
+  pre:
+    - pip install awscli
+    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+    - docker build --rm=false -t stolemyusername/folio:$CIRCLE_SHA1 .
+    - docker push stolemyusername/folio:$CIRCLE_SHA1
+  # override:
+
+# test:
+#   override:
+#     - docker run -d -p 9200:9200 stolemyusername/folio; sleep 10
+#     - curl --retry 10 --retry-delay 5 -v http://localhost:9200
+
+deployment:
+  elasticbeanstalk:
+    branch: master
+    commands:
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - sh ./deploy.sh $CIRCLE_SHA1 $AWS_ACCESS_KEY_ID $AWS_SECRET_ACCESS_KEY
