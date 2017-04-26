@@ -6,7 +6,13 @@
   },
   "volumes": [
     {
-      "name": "web-app",
+      "name": "data",
+      "host": {
+        "sourcePath": "/var/data"
+      }
+    },
+    {
+      "name": "web",
       "host": {
         "sourcePath": "/var/app/current/web-app"
       }
@@ -14,24 +20,32 @@
     {
       "name": "nginx-proxy-conf",
       "host": {
-        "sourcePath": "/var/app/current/proxy/conf.d"
+        "sourcePath": "/var/app/current/container/proxy/conf.d"
+
       }
-    }
+    },
+   {
+     "name": "awseb-logs-nginx-proxy",
+     "host": {
+       "sourcePath": "/var/log/proxy"
+     }
+   }
   ],
   "containerDefinitions": [
     {
-      "name": "web-app",
+      "name": "web",
       "image": "stolemyusername/folio:<TAG>",
       "essential": true,
       "memory": 128,
-      "mountPoints": [
+      "portMappings": [
         {
-          "sourceVolume": "web-app",
-          "containerPath": "/usr/src/app",
-          "readOnly": true
+          "hostPort": 3000,
+          "containerPort": 3000
         }
-      ]
+      ],
+      "mountPoints": []
     },
+
     {
       "name": "nginx-proxy",
       "image": "nginx",
@@ -44,14 +58,9 @@
         }
       ],
       "links": [
-        "web-app"
+        "web"
       ],
       "mountPoints": [
-        {
-          "sourceVolume": "web-app",
-          "containerPath": "/var/app/current/web-app",
-          "readOnly": true
-        },
         {
           "sourceVolume": "nginx-proxy-conf",
           "containerPath": "/etc/nginx/conf.d",
