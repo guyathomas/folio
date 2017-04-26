@@ -1,54 +1,13 @@
 {
-  "AWSEBDockerrunVersion": 2,
-  "Authentication": {
+    "AWSEBDockerrunVersion": 2,
+      "Authentication": {
     "Bucket": "folio-bucket",
     "Key": "docker/dockercfg"
   },
-  "volumes": [
-    {
-      "name": "data",
-      "host": {
-        "sourcePath": "/var/app/data"
-      }
-    },
-    {
-      "name": "web",
-      "host": {
-        "sourcePath": "/var/app/current/web-app"
-      }
-    },
-    {
-      "name": "nginx-proxy-conf",
-      "host": {
-        "sourcePath": "/var/app/current/container/proxy/conf.d"
-
-      }
-    },
-   {
-     "name": "awseb-logs-nginx-proxy",
-     "host": {
-       "sourcePath": "/var/log/proxy"
-     }
-   }
-  ],
-  "containerDefinitions": [
+    "containerDefinitions": [
     {
       "name": "web",
       "image": "stolemyusername/folio:<TAG>",
-      "essential": true,
-      "memory": 128,
-      "portMappings": [
-        {
-          "hostPort": 3000,
-          "containerPort": 3000
-        }
-      ],
-      "mountPoints": []
-    },
-
-    {
-      "name": "nginx-proxy",
-      "image": "nginx",
       "essential": true,
       "memory": 128,
       "portMappings": [
@@ -57,19 +16,12 @@
           "containerPort": 80
         }
       ],
-      "links": [
-        "web"
-      ],
       "mountPoints": [
         {
-          "sourceVolume": "nginx-proxy-conf",
-          "containerPath": "/etc/nginx/conf.d",
-          "readOnly": true
-        },
-        {
-          "sourceVolume": "awseb-logs-nginx-proxy"
+          "sourceVolume": "awseb-logs-app",
+          "containerPath": "/var/log/"
         }
       ]
     }
-  ]
+    ]
 }
