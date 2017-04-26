@@ -67,8 +67,7 @@
           "readOnly": true
         },
         {
-          "sourceVolume": "awseb-logs-nginx-proxy",
-          "containerPath": "/var/log/nginx"
+          "sourceVolume": "awseb-logs-nginx-proxy"
         }
       ]
     }
