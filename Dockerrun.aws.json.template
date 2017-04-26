@@ -15,8 +15,6 @@
     "image": "stolemyusername/folio:<TAG>",
     "essential": true,
     "memory": 128,
-    "portMappings": [{
-    }],
     "mountPoints": [{
       "sourceVolume": "web-app",
       "containerPath": "/var/www/html",
