@@ -8,7 +8,7 @@
     {
       "name": "data",
       "host": {
-        "sourcePath": "/var/data"
+        "sourcePath": "/var/app/data"
       }
     },
     {
