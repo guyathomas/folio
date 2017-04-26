@@ -6,17 +6,6 @@ services:
     build: . # specify the directory of the Dockerfile
     ports:
       - "3000:5000"
-    # image: stolemyusername/engauge:latest
-    # mem_limit: 67108864b
-    # deploy:
-    #   resources:
-    #     limits:
-    #       cpus: '0.001'
-    #       memory: 50M
-    #     reservations:
-    #       cpus: '0.0001'
-    #       memory: 20M
-       # specify port forewarding
   #   links:
   #     - database
   # database: # name of the third service
