@@ -16,16 +16,11 @@
     "essential": true,
     "memory": 128,
     "portMappings": [{
-      "hostPort": 80,
-      "containerPort": 80
     }],
     "mountPoints": [{
       "sourceVolume": "web-app",
       "containerPath": "/var/www/html",
       "readOnly": true
-    }],
-    "links": [
-      "postgres-db"
-    ]
+    }]
   }]
 }

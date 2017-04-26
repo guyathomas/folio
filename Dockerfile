@@ -6,16 +6,18 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # Install app dependencies
-COPY package.json /usr/src/app/
-RUN npm install
+COPY package.json yarn.lock ./
+RUN yarn --pure-lockfile
 
 # Bundle app source
 COPY . /usr/src/app
 
 # Build and optimize react app
-RUN npm run build
+RUN yarn run build
+RUN yarn global add serve
 
-EXPOSE 3000
 
 # defined in package.json
-CMD [ "npm", "run", "start" ]
+CMD serve -s build
+
+EXPOSE 5000
