@@ -17,10 +17,6 @@
         }
       ],
       "mountPoints": [
-        {
-          "sourceVolume": "awseb-logs-app",
-          "containerPath": "/var/log/"
-        }
       ]
     }
     ]
