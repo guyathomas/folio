@@ -16,7 +16,7 @@ COPY . /usr/src/app
 RUN yarn run build
 RUN yarn global add serve
 
-EXPOSE 3000
+EXPOSE 5000
 
 # defined in package.json
 CMD serve -s build

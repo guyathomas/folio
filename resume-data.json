@@ -1,0 +1,199 @@
+{
+   "basics":{
+      "name":"Guy Thomas",
+      "label":"Full Stack Developer",
+      "picture":"https://avatars1.githubusercontent.com/u/19481150?v=3&s=460",
+      "email":"guythomas721@gmail.com",
+      "phone":"(61) 430-706-927",
+      "website":"http://guythome.me",
+      "summary":"Website Summary",
+      "location":{
+         "address":"Cubitt Street",
+         "postalCode":"VIC 3121",
+         "city":"Melbourne",
+         "countryCode":"AU",
+         "region":"Victoria"
+      },
+      "profiles":[
+         {
+            "network":"Linkedin",
+            "username":"guyathomas",
+            "url":"https://www.linkedin.com/in/guyathomas"
+         },
+         {
+            "network":"Github",
+            "username":"stolemyusername",
+            "url":"https://github.com/stolemyusername"
+         }
+      ]
+   },
+   "work":[
+      {
+         "company":"IBM",
+         "position":"Developer",
+         "website":"http://ibm.com",
+         "startDate":"2014-07-01",
+         "endDate":"2016-07-01",
+         "summary":"",
+         "highlights":[
+            "Developed data models with business logic on a Node backend to target real time customer behavior.",
+            "Managed the development of internal websites to Bluemix to pitch solutions to our clients.",
+            "Implemented unit testing with SOAP API to reduce testing cycle by 50%"
+         ]
+      },
+      {
+         "company":"IBM",
+         "position":"Project Manager",
+         "website":"http://ibm.com",
+         "startDate":"2013-02-01",
+         "endDate":"2013-07-01",
+         "summary":"",
+         "highlights":[
+            "Managed the installation and configuration of 3600 bedside entertainment systems in hospitals.",
+            "Ran Agile standups to simplify the rollout process and maintain transparency between stakeholders."
+         ]
+      }
+   ],
+   "volunteer":[
+      {
+         "organization":"Organization",
+         "position":"Volunteer",
+         "website":"http://organization.com/",
+         "startDate":"2012-01-01",
+         "endDate":"2013-01-01",
+         "summary":"Description...",
+         "highlights":[
+            "Awarded 'Volunteer of the Month'"
+         ]
+      }
+   ],
+   "education":[
+      {
+         "institution":"Monash University",
+         "area":"Commerce",
+         "studyType":"Bachelor",
+         "startDate":"2011-01-01",
+         "endDate":"2013-11-01",
+         "gpa":"2.708",
+         "courses":[
+            "BEX3024 - Industry Based Learning Project",
+            "AFC3230 - Financial Analysis And Valuation",
+            "AFX3355 - Property Investment",
+            "ATS1835 - Philosophy: Introduction B (Time, Self And Mind)",
+            "ECC2300 - CUrrent Issues in Macroeconomic Policy",
+            "AFC2240 - Equities And Investment Analysis",
+            "ECC2000 - Intermediate Microecnomics",
+            "ETC2440 - Mathematics For Economics And Business",
+            "MKC2110 - Buyer Behaviour In Marketing",
+            "AFC3140 - Advanced Corporate Finance",
+            "FIT1004 - Data Management",
+            "FIT1013 - IT For  Business",
+            "FIT2002 - Project Management",
+            "AFC1000 - Principles Of Accounting And Finance",
+            "BTC1110 - Business Law",
+            "ECC1000 - Principles Of Microecnomics",
+            "ETC1000 - Business And Economics Statistics",
+            "AFC2140 - Corporate Finance",
+            "ECC1100 - Principles Of Macroeconomics",
+            "MGC1010 - Introduction To Management",
+            "MKC1200 - Principles Of Marketing"
+         ]
+      },
+      {
+         "institution":"Hack Reactor",
+         "area":"Full Stack Software Engineering",
+         "studyType":"Bootcamp",
+         "startDate":"2016-09-12",
+         "endDate":"2016-12-10",
+         "gpa":"",
+         "courses":[
+         ]
+      }
+   ],
+   "awards":[
+      {
+         "title":"Future Leaders Scholarship",
+         "date":"2013-07-01",
+         "awarder":"IBM",
+         "summary":"Awarded to promising future leaders in the IT industry"
+      }
+   ],
+   "publications":[
+      {
+         "name":"Publication",
+         "publisher":"Company",
+         "releaseDate":"2014-10-01",
+         "website":"http://publication.com",
+         "summary":"Description..."
+      }
+   ],
+   "skills":[
+      {
+         "name":"Web Development",
+         "level":"Master",
+         "keywords":[
+            "HTML",
+            "CSS",
+            "Javascript"
+         ]
+      }
+   ],
+   "languages":[
+      {
+         "name":"English",
+         "level":"Native speaker"
+      }
+   ],
+   "interests":[
+      {
+         "name":"Drones",
+         "keywords":[
+            "Phantom 4",
+            "4K",
+            "Photography",
+            "Autonomous"
+         ]
+      }
+   ],
+   "references":[
+      {
+         "name":"Olivia",
+         "reference":"Guy is a go getter who is not afraid of dreaming big, and delivering even more."
+      }
+   ],
+   "projects":[
+      {
+         "title":"Engauge",
+         "url":"www.engauge.xyz",
+         "short-summary":"Track where users look on your website designs",
+         "screenshotURL":"https://camo.githubusercontent.com/aacdfba30823aa32c47fecbf11ca186d42e1d4e6/687474703a2f2f7265732e636c6f7564696e6172792e636f6d2f6471766c66706165762f696d6167652f75706c6f61642f635f7363616c652c775f323931362f76313439303536363931332f53637265656e5f53686f745f323031372d30332d32375f61745f392e31382e35335f616d5f78796b7576652e706e67",
+         "position":"Full Stack Software Engineer",
+         "keywords":[
+            "React",
+            "Socket.io",
+            "Node",
+            "Express",
+            "Postgres",
+            "Docker",
+            "CircleCI",
+            "AWS"
+         ],
+         "achievements":[
+            "Architected a scalable distributed system leveraging docker to create several key microservices.",
+            "Implemented real time recording of user input using Socket.io to handle hundreds of data points per second."
+         ]
+      }
+   ],
+   "tech": {
+      "languages": ["Javascript", "GoLang", "PHP"],
+      "frameworks": ["React", "React Native", "Angular 1", "Node/Express", "Wordpress"],
+      "testing": ["Jest", "Mocha", "Chai"],
+      "dev-tools": ["Docker", "Circle CI", "Travis CI"],
+      "databases-and-stores": ["MongoDB", "PostgreSQL", "MySQL", "Redis", "ElasticSearch"],
+      "deployment-platforms": ["AWS", "Heroku"]
+   },
+   "aboutme" : "I’m passionate about using technology to influence people's’ lives at scale.\n
+                I previously identified that there was a lack of directions services that account for the safety of a particular walking path, so I teamed up and built SafeHippo (description in main body).\n
+                The most exciting technology that I’m working with at the moment is VR.\n
+                It is one of my goals to build a platform in the next 6 months  that will offer an experience that blends drones and virtual reality together.\n"
+}
