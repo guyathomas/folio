@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import './styles/app.css';
-import Header from './components/header/Default';
-import Landing from './components/landing/Default';
-import Folio from './components/Folio';
+import Header from './sections/header/default.js';
+import Landing from './sections/landing/default.js';
+import Folio from './Folio.js';
+
 
 class App extends Component {
   render() {
