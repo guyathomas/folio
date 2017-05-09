@@ -28,7 +28,7 @@ body {
   font-size: 28px;
 }
 nav.navbar {
-  background: rgba(255,255,255,0.6);
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +38,8 @@ nav.navbar {
   height: 50px;
   justify-content: space-around;
   z-index: 1;
+  border-radius: 0px 5px 15px #000;
+  top: 0;
 }
 nav.navbar ul {
   display: flex;
@@ -70,4 +72,9 @@ nav.navbar ul li:first-child {
 }
 .landing h1 {
   font-size: 4em;
+}
+.folio {
+  margin-top: 50px;
+  color: #fff;
+  background-color: #00f;
 }

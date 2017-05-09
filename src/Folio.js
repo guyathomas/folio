@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
 
 class Folio extends Component {
+	//Hero
+		//Tech
+	//Projects (Repeat)
+	//Work History
+	//Footer
+		//Email
+		//Profiles (Linkedin, Github)
   render() {
-  	console.log('Folio loaded')
     return (
       <div className="folio">
-      Folio
+      	<div>First</div>
+      	<div>Second</div>
+      	<div>Third</div>
+      	<div>Fourth</div>
       </div>
     );
   }
