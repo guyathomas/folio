@@ -235,5 +235,5 @@
       "databases-and-stores": ["MongoDB", "PostgreSQL", "MySQL", "Redis", "ElasticSearch"],
       "deployment-platforms": ["AWS", "Heroku"]
    },
-   "aboutme" : "I’m passionate about using technology to influence people's’ lives at scale. I previously identified that there was a lack of directions services that account for the safety of a particular walking path, so I teamed up and built SafeHippo (description in main body). The most exciting technology that I’m working with at the moment is VR. It is one of my goals to build a platform in the next 6 months  that will offer an experience that blends drones and virtual reality together."
+   "aboutme" : "I'm a Fullstack Engineer.\nI design beautiful responsive websites."
 }

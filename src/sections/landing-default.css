@@ -1,0 +1,4 @@
+.landing {
+  height: calc(100vh - navheight);
+  background-color: #00f;
+}
