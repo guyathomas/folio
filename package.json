@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "concurrently": "^3.4.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router": "^4.1.1",
@@ -17,6 +18,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "styles-w": "stylus -w src/styles/"
+    "styles-w": "concurrently \"stylus -w src/sections/\" \"stylus -w src/\""
   }
 }
