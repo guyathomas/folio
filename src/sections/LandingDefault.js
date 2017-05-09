@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 class Landing extends Component {
 	constructor(props){
-		console.log('const props', props)
 		super();
 	}
 
@@ -11,10 +10,12 @@ class Landing extends Component {
   	console.log('test',this.props.resume)
   	const basics = this.props.resume.basics;
     return (
-      <div className="landing">
-      	<div>{basics.label}</div>
-      	<div>{basics.byline}</div>
-      	<div>View Portfolio</div>
+      <div className="landing center">
+        <div className="container">
+        	<h1>{basics.label}</h1>
+        	<h2>{basics.byline}</h2>
+        	<div>View Portfolio</div>
+        </div>
       </div>
     );
   }

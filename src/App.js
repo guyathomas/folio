@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
-import Navbar from './sections/navbar-default.js';
-import Landing from './sections/landing-default.js';
+import Navbar from './sections/NavbarDefault.js';
+import Landing from './sections/LandingDefault.js';
 import Folio from './Folio.js';
-import './App.css'
 import './StyleLoader.css'
 import resume from '../resume-data.json'
-
 
 class App extends Component {
   render() {

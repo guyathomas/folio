@@ -4,7 +4,7 @@ nav.navbar {
   align-items: center;
   justify-content: center;
   flex-flow: row nowrap;
-  height: 50px;
+  height: navheight;
   justify-content: space-around;
 }
 nav.navbar ul {
