@@ -182,6 +182,49 @@
             "Architected a scalable distributed system leveraging docker to create several key microservices.",
             "Implemented real time recording of user input using Socket.io to handle hundreds of data points per second."
          ]
+      },
+      {
+         "title":"Encourse",
+         "url":"www.encourse.xyz",
+         "short-summary":"Search Udemy, Coursera, edX and Udacity in one place",
+         "screenshotURL":"https://s3.amazonaws.com/poly-screenshots.angel.co/Project/71/480001/be8f5420b2f5a36fb2d991366792ab66-original.jpeg",
+         "position":"Full Stack Software Engineer",
+         "keywords":[
+            "React",
+            "Node",
+            "Express",
+            "MongoDB",
+            "Docker",
+            "ElasticSearch",
+            "Heroku"
+         ],
+         "achievements":[
+            "Implemented incremental search with Elasticsearch to provide instant search results.",
+            "Cached common queries with Redis to provide low latency repeated searches.",
+            "Architected workers to periodically check the source API’s to maintain the most relevant information.",
+            "Designed a responsive masonry style theme with CSS3 and Flexbox to display results in a Pinterest-style format."
+         ]
+      },
+      {
+         "title":"SafeHippo",
+         "url":"www.safehippo.com",
+         "short-summary":"Provides safest walking routes in the Bay Area",
+         "screenshotURL":"https://s3.amazonaws.com/poly-screenshots.angel.co/Project/f5/479997/22a45d2e2e60bebaa448351f22fe1b3a-original.png",
+         "position":"Full Stack Software Engineer",
+         "keywords":[
+            "Angular",
+            "Node",
+            "Express",
+            "MongoDB",
+            "Redis",
+            "Digital Ocean"
+         ],
+         "achievements":[
+           "Architected a ranking algorithm with Node.js to provide safest optimised walking routes.",
+           "Engineered API to enable developers access to routing results.",
+           "Cached commonly computed route calculations with Redis to avoid repeating complex calculations.",
+           "Designed an intuitive & lightweight UI using Angular."
+         ]
       }
    ],
    "tech": {
