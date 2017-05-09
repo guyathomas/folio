@@ -1,16 +1,23 @@
 nav.navbar 
-	background: rgba(0,0,0,.2);
+	background: rgba(255, 255, 255, 0.6);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-flow: row nowrap;
+	position: fixed;
+	width: 100%;
 	height: navheight;
 	justify-content: space-around;
+	z-index: 1;
 	ul
 		display: flex;
 		list-style-type: none;
 		width:100%;
 		li
+			align-self: center;
 			padding 0 2em
-			&:first-child
+			&:first-child //The Name element
+				white-space: nowrap;
 				margin-right: auto;
+				font-weight: 700;
+				font-size: 2em;

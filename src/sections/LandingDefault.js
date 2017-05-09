@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 class Landing extends Component {
 	constructor(props){
@@ -8,13 +9,13 @@ class Landing extends Component {
 
   render() {
   	console.log('test',this.props.resume)
-  	const basics = this.props.resume.basics;
+  	const resume = this.props.resume;
     return (
       <div className="landing center">
         <div className="container">
-        	<h1>{basics.label}</h1>
-        	<h2>{basics.byline}</h2>
-        	<div>View Portfolio</div>
+        	<h1>{resume.basics.label}</h1>
+        	<h2>{resume.aboutme}</h2>
+        	<div className="cta"><Link to="/folio">View Portfolio</Link></div>
         </div>
       </div>
     );

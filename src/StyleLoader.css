@@ -19,14 +19,30 @@ body {
   align-items: center;
   justify-content: center;
 }
+.cta {
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid #fff;
+  width: 280px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 28px;
+  color: #fff;
+  transition: all 0.1s ease-out;
+}
 nav.navbar {
-  background: rgba(0,0,0,0.2);
+  background: rgba(255,255,255,0.6);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row nowrap;
+  position: fixed;
+  width: 100%;
   height: 50px;
   justify-content: space-around;
+  z-index: 1;
 }
 nav.navbar ul {
   display: flex;
@@ -34,21 +50,29 @@ nav.navbar ul {
   width: 100%;
 }
 nav.navbar ul li {
+  align-self: center;
   padding: 0 2em;
 }
 nav.navbar ul li:first-child {
+  white-space: nowrap;
   margin-right: auto;
+  font-weight: 700;
+  font-size: 2em;
 }
 .landing {
   color: #fff;
-  height: calc(100vh - 50px);
+  height: 100vh;
   background-color: #00f;
   background-image: url("https://images.unsplash.com/photo-1483199095378-ce6e77cd1c0d?dpr=2&auto=format&fit=crop&w=1500&h=918&q=80&cs=tinysrgb&crop=&bg=");
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
 .landing .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.landing h1 {
+  font-size: 4em;
 }
