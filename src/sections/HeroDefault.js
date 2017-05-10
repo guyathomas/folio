@@ -50,10 +50,11 @@ class Hero extends Component {
   }
 
   resetExpanded(i) {
-  	this.setState({expanded: -1});
+  	this.updateExpanded(-1);
   }
 
   componentDidMount() {
+  	//Have the default list transition on load
   	const initalList = this.updateExpanded.bind(this, 0);
   	setTimeout(initalList, 0);
   }
