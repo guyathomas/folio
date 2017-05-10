@@ -120,26 +120,28 @@ nav.navbar ul li:first-child {
   display: flex;
   justify-content: space-around;
   padding: 2%;
+  flex-direction: column;
 }
-.project.right {
-  flex-direction: row-reverse;
+.project > * {
+  padding: 2% 2% 2% 0;
 }
-@media screen and (max-width: 900px) {
-  .project.right {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
   .project {
-    flex-direction: column;
+    flex-direction: row;
+  }
+  .project.right {
+    flex-direction: row-reverse;
+  }
+  .project.right > * {
+    padding: 2% 0 2% 2%;
   }
 }
 .project .preview {
-  max-width: 65%;
+  max-width: 100%;
 }
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
   .project .preview {
-    max-width: 100%;
+    max-width: 65%;
   }
 }
 .project .preview img {

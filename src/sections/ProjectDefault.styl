@@ -3,15 +3,41 @@
 	display: flex;
 	justify-content: space-around;
 	padding: 2%;
-	&.right
-		flex-direction: row-reverse
-		@media screen and (max-width: 900px)
-			flex-direction: column
-	@media screen and (max-width: 900px)
-		flex-direction: column
+	flex-direction: column;
+	> *
+		padding: 2% 2% 2% 0
+	@media screen and (min-width: 900px)
+		flex-direction: row
+		&.right
+			flex-direction: row-reverse
+			> *
+				padding: 2% 0 2% 2%
 	.preview
-		@media screen and (max-width: 900px)
-			max-width: 100%;
-		max-width: 65%;
+		max-width: 100%;
+		@media screen and (min-width: 900px)
+			max-width: 65%;
 		img
 			max-width: 100%
+	// .description
+	// 	.pipelist
+	// 		padding: 2% 0;
+			
+
+	// 		.project
+	// color: black;
+	// display: flex;
+	// justify-content: space-around;
+	// padding: 2%;
+	// @media screen and (max-width: 900px)
+	// 	flex-direction: column
+	// &.right
+	// 	flex-direction: row-reverse
+	// .preview
+	// 	@media screen and (max-width: 900px)
+	// 		max-width: 100%;
+	// 	max-width: 65%;
+	// 	img
+	// 		max-width: 100%
+	// .description
+	// 	.pipelist
+	// 		padding: 2% 0;
