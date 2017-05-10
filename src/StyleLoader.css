@@ -27,6 +27,23 @@ body {
   border-radius: 50px;
   font-size: 28px;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.landing {
+  color: #fff;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1483199095378-ce6e77cd1c0d?dpr=2&auto=format&fit=crop&w=1500&h=918&q=80&cs=tinysrgb&crop=&bg=");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.landing h1 {
+  font-size: 4em;
+}
 nav.navbar {
   background: #fff;
   display: flex;
@@ -56,23 +73,6 @@ nav.navbar ul li:first-child {
   font-weight: 700;
   font-size: 2em;
 }
-.landing {
-  color: #fff;
-  height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1483199095378-ce6e77cd1c0d?dpr=2&auto=format&fit=crop&w=1500&h=918&q=80&cs=tinysrgb&crop=&bg=");
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-}
-.landing .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-.landing h1 {
-  font-size: 4em;
-}
 .folio {
   margin-top: 50px;
   color: #fff;
@@ -87,12 +87,14 @@ nav.navbar ul li:first-child {
 }
 .hero .skills {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
+  align-self: flex-end;
+  flex-wrap: wrap;
 }
 .hero .skills .skill {
   list-style-type: none;
   padding: 0 1em;
+  text-align: right;
 }
 .hero .skills .skill h2 {
   cursor: pointer;

@@ -43,7 +43,7 @@ class Hero extends Component {
   render() {
   	console.log('in render', this.updateExpanded)
     return (
-      <div className="hero center">
+      <div className="hero">
       	<div className="container">
       		<ul className="skills">
 	      		{Object.keys(this.props.resume.tech).map((skill, i) => {
