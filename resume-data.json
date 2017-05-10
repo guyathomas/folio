@@ -180,7 +180,7 @@
             "Architected a scalable distributed system leveraging docker to create several key microservices.",
             "Implemented real time recording of user input using Socket.io to handle hundreds of data points per second."
          ],
-         "longdesc" : "Engauge gives designers aspect to the most important data of any design - where people look. It features a nimble front end with React.js and microservice architecture with Docker to offer a high performance, and elegent solution."
+         "longdesc" : "Engauge gives designers aspect to the most important data of any design - where people look. It features a nimble front end with React.js and microservice architecture with Docker to offer a highly performant, and elegent solution."
       },
       {
          "title":"Encourse",
@@ -230,12 +230,13 @@
       }
    ],
    "tech": {
-      "languages": ["Javascript", "GoLang", "PHP"],
-      "frameworks": ["React", "React Native", "Angular 1", "Node/Express", "Wordpress"],
-      "testing": ["Jest", "Mocha", "Chai"],
-      "dev-tools": ["Docker", "Circle CI", "Travis CI"],
+      "languages": ["Javascript", "GoLang", "Ruby", "Python"],
+      "frameworks-&-libraries": ["React", "React Native", "Angular 1", "Node/Express", "Wordpress", "Django"],
       "databases-and-stores": ["MongoDB", "PostgreSQL", "MySQL", "Redis", "ElasticSearch"],
-      "deployment-platforms": ["AWS", "Heroku"]
+      "css-preprocessors": ["Stylus", "SASS", "LESS"],
+      "testing": ["Jest", "Mocha", "Chai"],
+      "dev-tools": ["Docker", "Circle CI", "Webpack"],
+      "deployment-platforms": ["AWS", "Heroku", "Digital Ocean"]
    },
    "aboutme" : "I'm a Fullstack Engineer.\nI design beautiful responsive websites."
 }
