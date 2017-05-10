@@ -1,43 +1,43 @@
 .project
-	color: black;
 	display: flex;
-	justify-content: space-around;
-	padding: 2%;
 	flex-direction: column;
-	> *
-		padding: 2% 2% 2% 0
+	color: black;
+	padding: 2%;
 	@media screen and (min-width: 900px)
-		flex-direction: row
+		justify-content: space-between;
+		padding: 2%;
+		max-height: 400px;
+		&.left
+			flex-direction: row
 		&.right
 			flex-direction: row-reverse
-			> *
-				padding: 2% 0 2% 2%
-	.preview
+	> *
+		padding: 2%;
+	.visuals
 		max-width: 100%;
+		display: flex;
+		flex-direction: column;
 		@media screen and (min-width: 900px)
-			max-width: 65%;
-		img
-			max-width: 100%
-	// .description
-	// 	.pipelist
-	// 		padding: 2% 0;
-			
-
-	// 		.project
-	// color: black;
-	// display: flex;
-	// justify-content: space-around;
-	// padding: 2%;
-	// @media screen and (max-width: 900px)
-	// 	flex-direction: column
-	// &.right
-	// 	flex-direction: row-reverse
-	// .preview
-	// 	@media screen and (max-width: 900px)
-	// 		max-width: 100%;
-	// 	max-width: 65%;
-	// 	img
-	// 		max-width: 100%
-	// .description
-	// 	.pipelist
-	// 		padding: 2% 0;
+			max-width: 75%;
+			display: inline-flex;
+			flex-direction: row;
+			// ^[0].right .visuals
+			// 	background-color: blue;
+			// ^[0].left .visuals
+			// 	background-color: red;
+		.screenshot
+			display:flex;
+			flex-shrink: 0;
+			// background-color: black;
+			// project .visuals.right .visuals .screenshot
+			^[0].right .visuals .screenshot
+				justify-content: flex-start;
+			^[0].left .visuals .screenshot
+				justify-content: flex-end;
+			max-height: 400px;
+			width: 100%;
+			img
+				width: 100%;
+				height: 100%;
+				@media screen and (min-width: 900px)
+					width: auto;

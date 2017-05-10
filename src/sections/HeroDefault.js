@@ -8,7 +8,7 @@ const titleify = string => (string.split('-').map(word => word.toProperCase()).j
 
 const delayAppear = (i, isShown) => (
 	{
-		transition: `opacity ${(i + 1) / 5}s linear`
+		transition: `opacity ${(i + 1) / 4}s linear`
 	}
 )
 

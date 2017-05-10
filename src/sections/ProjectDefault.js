@@ -9,8 +9,10 @@ const Project = (props) => {
       		<h3>{props.project.shortsummary}</h3>
       		<div className="pipelist">{props.project.keywords.join(' | ')}</div>
       	</div>
-      	<div className="preview">
-      		<img src={props.project.screenshotURL} />
+      	<div className="visuals">
+      		<div className="screenshot">
+      			<img src={props.project.screenshotURL} />
+      		</div>
       	</div>
       </div>
     );
