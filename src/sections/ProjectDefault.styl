@@ -1,7 +1,18 @@
 .project
 	display: flex;
 	flex-direction: column;
-	color: black;
+	&.left
+		color: black;
+		text-align: left;
+		background-color: white;
+	&.right
+		color: white;
+		text-align: right;
+		background-image: url("https://images.unsplash.com/uploads/14131528357928cb9c5b5/220ec369?dpr=2&auto=format&fit=crop&w=1500&h=996&q=80&cs=tinysrgb&crop=&bg=")
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
 	padding: 2%;
 	@media screen and (min-width: 900px)
 		justify-content: space-between;
@@ -11,12 +22,18 @@
 			flex-direction: row
 		&.right
 			flex-direction: row-reverse
+	.description
+		max-width: 600px;
+		.longdesc
+			padding-top: 2%;
 	> *
 		padding: 2%;
 	.visuals
 		max-width: 100%;
 		display: flex;
 		flex-direction: column;
+		height: 300px;
+		width: 600px;
 		@media screen and (min-width: 900px)
 			max-width: 75%;
 			display: flex;
