@@ -1,27 +1,29 @@
 .hero
+	display: flex;
 	background-image: url("https://images.unsplash.com/photo-1475817098549-d7cb5081b5b7?dpr=2&auto=format&fit=crop&w=1920&h=1280&q=80&cs=tinysrgb&crop=&bg=")
 	background-size: cover;
 	background-position: 0px 20%;
 	background-repeat: no-repeat;
 	min-height: 40vh;
-	.skills
-		display: flex;
-		justify-content: flex-end;
-		align-self: flex-end;
-		flex-wrap: wrap;
-		.skill
-			list-style-type: none;
-			padding: 0 1em;
-			text-align: right;
-			h2
-				cursor: pointer; 
-				cursor: hand;
-			.techs
-				display: flex;
-				flex-direction: column;
-				*
-					padding-bottom: 0.3em;
-				.show
-					opacity: 1
-				.hide
-					opacity: 0
+	.container
+		    justify-content: center;
+		.skills
+			display: flex;
+			align-self: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			.skill
+				list-style-type: none;
+				padding: 0 1em;
+				text-align: center;
+				h2
+					font-weight: 200;
+				.techs
+					display: flex;
+					flex-direction: column;
+					*
+						padding-bottom: 0.3em;
+					.show
+						opacity: 1
+					.hide
+						opacity: 0

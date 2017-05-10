@@ -14,11 +14,13 @@ const delayAppear = (i, isShown) => (
 
 const Skill = (props) => {
 		return (
-			<li className="skill">
-				<h2 onClick={props.handler}
-					onMouseEnter={props.handler}
-					onMouseLeave={props.resetExpanded}
-					>
+			<li
+				className="skill"
+				onClick={props.handler}
+				onMouseEnter={props.handler}
+				onMouseLeave={props.resetExpanded}
+			>
+				<h2>
 					{titleify(props.title)}
 				</h2>
 				<div className={"techs"}>
@@ -54,9 +56,15 @@ class Hero extends Component {
   }
 
   componentDidMount() {
-  	//Have the default list transition on load
-  	const initalList = this.updateExpanded.bind(this, 0);
-  	setTimeout(initalList, 0);
+  	//Trigger the startup animations
+  	const delayedHover = (i) => {
+  		const cb = this.updateExpanded.bind(this, i)
+  		setTimeout(cb, i * 1000);
+  	}
+
+  	Object.keys(this.props.resume.tech).forEach((item, i) => {
+  		delayedHover(i);
+  	})
   }
 
   render() {
