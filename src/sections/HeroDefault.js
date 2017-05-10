@@ -6,25 +6,30 @@ String.prototype.toProperCase = function () {
 
 const titleify = string => (string.split('-').map(word => word.toProperCase()).join(' '));
 
+const delayAppear = (i, isShown) => (
+	{
+		transition: `opacity ${(i + 1) / 5}s linear`
+	}
+)
+
 const Skill = (props) => {
-	console.log('props', props)
-	if (props.expanded === props.index) {
 		return (
 			<li className="skill">
 				<h2 onClick={props.handler}>{titleify(props.title)}</h2>
-				<div className="techs">
+				<div className={"techs"}>
 					{props.skill.map((tech, i) => {
-						return (<span key={i}>{tech}</span>)
+						return (
+							<span 
+								className={props.expanded === props.index ? "show" : "hide"} 
+								key={i}
+								style={delayAppear(i, props.expanded === props.index)}
+								>
+									{tech}
+							</span>
+							)
 					})}
 				</div>
 			</li>)
-	} else {
-		return (
-			<li className="skill">
-				<h2 onClick={props.handler}>{titleify(props.title)}</h2>
-			</li>)
-	}
-
 }
 
 class Hero extends Component {
@@ -36,12 +41,10 @@ class Hero extends Component {
 	}
   
   updateExpanded(i) {
-  	console.log('Tried to update', this)
   	this.setState({expanded: i});
   }
 
   render() {
-  	console.log('in render', this.updateExpanded)
     return (
       <div className="hero">
       	<div className="container">
