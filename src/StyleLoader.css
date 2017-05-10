@@ -115,3 +115,33 @@ nav.navbar ul li:first-child {
 .hero .skills .skill .techs .hide {
   opacity: 0;
 }
+.project {
+  color: #000;
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+}
+.project.right {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 900px) {
+  .project.right {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 900px) {
+  .project {
+    flex-direction: column;
+  }
+}
+.project .preview {
+  max-width: 65%;
+}
+@media screen and (max-width: 900px) {
+  .project .preview {
+    max-width: 100%;
+  }
+}
+.project .preview img {
+  max-width: 100%;
+}

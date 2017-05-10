@@ -161,8 +161,9 @@
    "projects":[
       {
          "title":"Engauge",
-         "url":"www.engauge.xyz",
-         "short-summary":"Track where users look on your website designs",
+         "url":"https://www.engauge.xyz",
+         "shortsummary":"Track where users look on your website designs",
+         "longsummary": "",
          "screenshotURL":"https://camo.githubusercontent.com/aacdfba30823aa32c47fecbf11ca186d42e1d4e6/687474703a2f2f7265732e636c6f7564696e6172792e636f6d2f6471766c66706165762f696d6167652f75706c6f61642f635f7363616c652c775f323931362f76313439303536363931332f53637265656e5f53686f745f323031372d30332d32375f61745f392e31382e35335f616d5f78796b7576652e706e67",
          "position":"Full Stack Software Engineer",
          "keywords":[
@@ -182,8 +183,9 @@
       },
       {
          "title":"Encourse",
-         "url":"www.encourse.xyz",
-         "short-summary":"Search Udemy, Coursera, edX and Udacity in one place",
+         "url":"http://www.encourse.xyz",
+         "shortsummary":"Search Udemy, Coursera, edX and Udacity in one place",
+         "longsummary": "",
          "screenshotURL":"https://s3.amazonaws.com/poly-screenshots.angel.co/Project/71/480001/be8f5420b2f5a36fb2d991366792ab66-original.jpeg",
          "position":"Full Stack Software Engineer",
          "keywords":[
@@ -204,8 +206,9 @@
       },
       {
          "title":"SafeHippo",
-         "url":"www.safehippo.com",
-         "short-summary":"Provides safest walking routes in the Bay Area",
+         "url":"https://www.safehippo.com",
+         "shortsummary":"Provides safest walking routes in the Bay Area",
+         "longsummary": "",
          "screenshotURL":"https://s3.amazonaws.com/poly-screenshots.angel.co/Project/f5/479997/22a45d2e2e60bebaa448351f22fe1b3a-original.png",
          "position":"Full Stack Software Engineer",
          "keywords":[

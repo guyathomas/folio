@@ -20,7 +20,7 @@ class Folio extends Component {
       <div className="folio">
       	<Hero resume={resume} />
       	{resume.projects.map((project, i) => (
-      		<Project project={project} key={i} />)
+      		<Project project={project} key={i} side={i % 2 === 0 ? "left" : "right"} />)
       	)}
       </div>
     );
