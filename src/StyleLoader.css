@@ -148,7 +148,7 @@ nav.navbar ul li:first-child {
 @media screen and (min-width: 900px) {
   .project .visuals {
     max-width: 75%;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
   }
 }
