@@ -129,12 +129,9 @@
    ],
    "skills":[
       {
-         "name":"Web Development",
+         "name":"Javascript",
          "level":"Master",
          "keywords":[
-            "HTML",
-            "CSS",
-            "Javascript"
          ]
       }
    ],

@@ -1,20 +1,27 @@
 import React, { Component } from 'react';
+import Hero from './sections/HeroDefault'
+import Project from './sections/ProjectDefault'
+import resume from '../resume-data.json'
 
 class Folio extends Component {
-	//Hero
-		//Tech
-	//Projects (Repeat)
-	//Work History
-	//Footer
-		//Email
-		//Profiles (Linkedin, Github)
+	
   render() {
+  	//Hero
+  		//Tech
+  	//Projects (Repeat)
+  	//Work History
+  	//Footer
+  		//Email
+  		//Profiles (Linkedin, Github)
+
+  	// 
+  	console.log(resume.projects)
     return (
       <div className="folio">
-      	<div>First</div>
-      	<div>Second</div>
-      	<div>Third</div>
-      	<div>Fourth</div>
+      	<Hero resume={resume} />
+      	{resume.projects.map((project, i) => (
+      		<Project project={project} key={i} />)
+      	)}
       </div>
     );
   }

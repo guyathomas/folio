@@ -59,7 +59,6 @@ nav.navbar ul li:first-child {
 .landing {
   color: #fff;
   height: 100vh;
-  background-color: #00f;
   background-image: url("https://images.unsplash.com/photo-1483199095378-ce6e77cd1c0d?dpr=2&auto=format&fit=crop&w=1500&h=918&q=80&cs=tinysrgb&crop=&bg=");
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,6 +68,7 @@ nav.navbar ul li:first-child {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .landing h1 {
   font-size: 4em;
@@ -77,4 +77,28 @@ nav.navbar ul li:first-child {
   margin-top: 50px;
   color: #fff;
   background-color: #00f;
+}
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1475817098549-d7cb5081b5b7?dpr=2&auto=format&fit=crop&w=1920&h=1280&q=80&cs=tinysrgb&crop=&bg=");
+  background-size: cover;
+  background-position: 0px 10%;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+.hero .skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.hero .skills .skill {
+  list-style-type: none;
+  padding: 0 1em;
+}
+.hero .skills .skill h2 {
+  cursor: pointer;
+  cursor: hand;
+}
+.hero .skills .skill .techs {
+  display: flex;
+  flex-direction: column;
 }
