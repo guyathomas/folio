@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 
-class Project extends Component {
-  render() {
+const Project = (props) => {
+	console.log('props in Project', props)
     return (
       <div className="project">
-      Project
+      	<div></div>
       </div>
     );
-  }
 }
-
 export default Project;

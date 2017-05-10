@@ -15,7 +15,12 @@ const delayAppear = (i, isShown) => (
 const Skill = (props) => {
 		return (
 			<li className="skill">
-				<h2 onClick={props.handler}>{titleify(props.title)}</h2>
+				<h2 onClick={props.handler}
+					onMouseEnter={props.handler}
+					onMouseLeave={props.resetExpanded}
+					>
+					{titleify(props.title)}
+				</h2>
 				<div className={"techs"}>
 					{props.skill.map((tech, i) => {
 						return (
@@ -36,12 +41,21 @@ class Hero extends Component {
 	constructor(props){
 		super()
 		this.state = {
-			expanded: 0,
+			expanded: -1,
 		}
 	}
   
   updateExpanded(i) {
   	this.setState({expanded: i});
+  }
+
+  resetExpanded(i) {
+  	this.setState({expanded: -1});
+  }
+
+  componentDidMount() {
+  	const initalList = this.updateExpanded.bind(this, 0);
+  	setTimeout(initalList, 0);
   }
 
   render() {
@@ -58,6 +72,7 @@ class Hero extends Component {
 	  					key={i}
 	  					expanded={this.state.expanded}
 	  					handler={this.updateExpanded.bind(this, i)}
+	  					resetExpanded={this.resetExpanded.bind(this)}
 	  				/>)
 	      		})
 	      		}
