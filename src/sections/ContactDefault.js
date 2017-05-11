@@ -19,7 +19,7 @@ class Contact extends Component {
     }
 
     return (
-      <div className="fadeout">
+      <div className="fadeout" onClick={this.props.contactHandler}>
         <div className="modal">
           <div className="avatar" style={avatarStyle} ></div>
           <div className="details">
