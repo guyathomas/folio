@@ -17,8 +17,6 @@ const Skill = (props) => {
 			<li
 				className="skill"
 				onClick={props.handler}
-				onMouseEnter={props.handler}
-				onMouseLeave={props.resetExpanded}
 			>
 				<h2>
 					{titleify(props.title)}
@@ -27,7 +25,7 @@ const Skill = (props) => {
 					{props.skill.map((tech, i) => {
 						return (
 							<span 
-								className={props.expanded === props.index ? "show" : "hide"} 
+								className={props.expanded[props.index] ? "show" : "hide"} 
 								key={i}
 								style={delayAppear(i, props.expanded === props.index)}
 								>
@@ -43,22 +41,21 @@ class Hero extends Component {
 	constructor(props){
 		super()
 		this.state = {
-			expanded: -1,
+			expandedStatus: {},
 		}
 	}
   
-  updateExpanded(i) {
-  	this.setState({expanded: i});
+  toggleExpanded(i) {
+  	const newStatus = this.state.expandedStatus;
+  	newStatus[i] = !newStatus[i];
+  	this.setState({ expandedStatus: newStatus });
   }
 
-  resetExpanded(i) {
-  	this.updateExpanded(-1);
-  }
 
   componentDidMount() {
   	//Trigger the startup animations
   	const delayedHover = (i) => {
-  		const cb = this.updateExpanded.bind(this, i)
+  		const cb = this.toggleExpanded.bind(this, i)
   		setTimeout(cb, i * 1000);
   	}
 
@@ -79,9 +76,8 @@ class Hero extends Component {
 	  					skill={this.props.resume.tech[skill]} 
 	  					index={i}
 	  					key={i}
-	  					expanded={this.state.expanded}
-	  					handler={this.updateExpanded.bind(this, i)}
-	  					resetExpanded={this.resetExpanded.bind(this)}
+	  					expanded={this.state.expandedStatus}
+	  					handler={this.toggleExpanded.bind(this, i)}
 	  				/>)
 	      		})
 	      		}
