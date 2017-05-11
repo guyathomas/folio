@@ -236,8 +236,8 @@
    ],
    "tech": {
       "languages": ["Javascript", "GoLang", "Ruby", "Python"],
-      "frameworks-&-libraries": ["React", "React Native", "Angular 1", "Node/Express", "Wordpress", "Django"],
-      "databases-and-stores": ["MongoDB", "PostgreSQL", "MySQL", "Redis", "ElasticSearch"],
+      "frameworks-&-libraries": ["React", "React Native", "Angular 1", "Node", "Django"],
+      "databases-and-stores": ["MongoDB", "PostgreSQL", "Redis", "ElasticSearch"],
       "css-preprocessors": ["Stylus", "SASS", "LESS"],
       "testing": ["Jest", "Mocha", "Chai"],
       "dev-tools": ["Docker", "Circle CI", "Webpack"],
