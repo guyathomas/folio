@@ -47,7 +47,7 @@ body {
 .landing h1 {
   font-size: 4em;
 }
-nav.navbar {
+.top nav.navbar {
   background: #fff;
   display: flex;
   align-items: center;
@@ -61,33 +61,46 @@ nav.navbar {
   box-shadow: 0 -4px 20px rgba(0,0,0,0.4);
   top: 0;
 }
-nav.navbar ul {
+.top nav.navbar ul {
   display: flex;
   list-style-type: none;
   width: 100%;
 }
-nav.navbar ul li {
+.top nav.navbar ul li {
   align-self: center;
   padding: 0 2em;
 }
-nav.navbar ul li.icon {
+.top nav.navbar ul li.icon {
   font-size: 2em;
 }
-nav.navbar ul li:first-child {
+.top nav.navbar ul li:first-child {
   white-space: nowrap;
   margin-right: auto;
   font-weight: 700;
   font-size: 2em;
 }
-nav.navbar ul li.web {
+.top nav.navbar ul li.web {
   display: none;
 }
 @media screen and (min-width: 900px) {
-  nav.navbar ul li.mobile {
+  .top nav.navbar ul li.mobile {
     display: none;
   }
-  nav.navbar ul li.web {
+  .top nav.navbar ul li.web {
     display: list-item;
+  }
+}
+.top .mobile-menu {
+  position: relative;
+  top: 50px;
+}
+.top .mobile-menu ul li {
+  padding: 1em;
+  border-bottom: 1px solid rgba(156,156,156,0.7);
+}
+@media screen and (min-width: 900px) {
+  .top .mobile-menu .dropdown {
+    display: none;
   }
 }
 .folio {
