@@ -15,8 +15,9 @@ class Header extends Component {
       <nav className="navbar">
       	<ul>
       	  <li><Link to="/">{this.name}</Link></li>
-      	  <li><Link to="/folio">Folio</Link></li>
-          <li><a href="#">Contact</a></li>
+          <li className="icon ion-navicon mobile"></li>
+      	  <li className="web"><Link to="/folio">Folio</Link></li>
+          <li className="web"><a href="#">Contact</a></li>
       	</ul>
       </nav>
     );

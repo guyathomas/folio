@@ -58,7 +58,7 @@ nav.navbar {
   height: 50px;
   justify-content: space-around;
   z-index: 1;
-  box-shadow: rgba(0,0,0,0.4) 0px 5px 5px;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.4);
   top: 0;
 }
 nav.navbar ul {
@@ -70,11 +70,25 @@ nav.navbar ul li {
   align-self: center;
   padding: 0 2em;
 }
+nav.navbar ul li.icon {
+  font-size: 2em;
+}
 nav.navbar ul li:first-child {
   white-space: nowrap;
   margin-right: auto;
   font-weight: 700;
   font-size: 2em;
+}
+nav.navbar ul li.web {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  nav.navbar ul li.mobile {
+    display: none;
+  }
+  nav.navbar ul li.web {
+    display: list-item;
+  }
 }
 .folio {
   margin-top: 50px;

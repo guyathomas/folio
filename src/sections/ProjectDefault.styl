@@ -1,61 +1,61 @@
 .project
-	display: flex;
-	flex-direction: column;
+	display: flex
+	flex-direction: column
 	&.left
-		color: black;
-		text-align: left;
-		background-color: white;
+		color: black
+		text-align: left
+		background-color: white
 	&.right
-		color: white;
-		text-align: right;
+		color: white
+		text-align: right
 		background-image: url("https://images.unsplash.com/uploads/14131528357928cb9c5b5/220ec369?dpr=2&auto=format&fit=crop&w=1500&h=996&q=80&cs=tinysrgb&crop=&bg=")
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-position: center;
-	padding: 2%;
+		background-size: cover
+		background-repeat: no-repeat
+		background-attachment: fixed
+		background-position: center
+	padding: 2%
 	@media screen and (min-width: 900px)
-		justify-content: space-between;
-		padding: 2%;
-		max-height: 400px;
+		justify-content: space-between
+		padding: 2%
+		max-height: 400px
 		&.left
 			flex-direction: row
 		&.right
 			flex-direction: row-reverse
 	.description
-		max-width: 600px;
+		max-width: 600px
 		.longdesc
-			padding-top: 5%;
+			padding-top: 5%
 		.pipelist
-			font-style: italic;
+			font-style: italic
 	> *
-		padding: 2%;
+		padding: 2%
 	.visuals
-		max-width: 100%;
-		display: flex;
-		flex-direction: column;
-		height: 300px;
-		width: 600px;
+		max-width: 100%
+		display: flex
+		flex-direction: column
+		height: 300px
+		width: 600px
 		@media screen and (min-width: 900px)
-			max-width: 75%;
-			display: flex;
-			flex-direction: row;
+			max-width: 75%
+			display: flex
+			flex-direction: row
 			// ^[0].right .visuals
-			// 	background-color: blue;
+			// 	background-color: blue
 			// ^[0].left .visuals
-			// 	background-color: red;
+			// 	background-color: red
 		.screenshot
-			display:flex;
-			flex-shrink: 0;
+			display:flex
+			flex-shrink: 0
 			^[0].right .visuals .screenshot
-				justify-content: flex-start;
+				justify-content: flex-start
 			^[0].left .visuals .screenshot
-				justify-content: flex-end;
-			max-height: 400px;
-			height: 100%;
-			width: 100%;
+				justify-content: flex-end
+			max-height: 400px
+			height: 100%
+			width: 100%
 			img
-				width: 100%;
-				height: 100%;
+				width: 100%
+				height: 100%
 				@media screen and (min-width: 900px)
-					width: auto;
+					width: auto
