@@ -229,3 +229,19 @@ body {
     width: auto;
   }
 }
+.fadeout {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: rgba(58,58,58,0.38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fadeout .modal {
+  background-color: #fff;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

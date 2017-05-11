@@ -4,17 +4,11 @@ import Project from './sections/ProjectDefault'
 import resume from '../resume-data.json'
 
 class Folio extends Component {
-	
-  render() {
-  	//Hero
-  		//Tech
-  	//Projects (Repeat)
-  	//Work History
-  	//Footer
-  		//Email
-  		//Profiles (Linkedin, Github)
+  constructor(props) {
+    super()
+  }
 
-  	// 
+  render() {
   	console.log(resume.projects)
     return (
       <div className="folio">

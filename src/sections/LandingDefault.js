@@ -8,7 +8,6 @@ class Landing extends Component {
 
 
   render() {
-  	console.log('test',this.props.resume)
   	const resume = this.props.resume;
     return (
       <div className="landing center">
