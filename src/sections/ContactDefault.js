@@ -15,7 +15,12 @@ class Contact extends Component {
     const iconMap = {
       "Email": "ion-ios-email",
       "Linkedin": "ion-social-linkedin",
-      "Github": "ion-social-github"
+      "Github": "ion-social-github",
+      "Twitter": "ion-social-twitter",
+      "Snapchat": "ion-social-snapchat",
+      "Reddit": "ion-social-reddit",
+      "Pinterst": "ion-social-pinterest",
+      "Facebook" : "ion-social-facebook"
     }
 
     return (
