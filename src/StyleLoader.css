@@ -68,10 +68,11 @@ body {
 }
 .top nav.navbar ul li {
   align-self: center;
-  padding: 0 2em;
+  padding: 0 1em;
 }
 .top nav.navbar ul li.icon {
   font-size: 2em;
+  padding-left: 0;
 }
 .top nav.navbar ul li:first-child {
   white-space: nowrap;
@@ -186,6 +187,7 @@ body {
 }
 .project .description .longdesc {
   padding-top: 5%;
+  line-height: 1.5em;
 }
 .project .description .pipelist {
   font-style: italic;
