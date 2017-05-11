@@ -233,15 +233,39 @@ body {
   height: 100vh;
   width: 100vw;
   position: fixed;
-  background-color: rgba(58,58,58,0.38);
+  background-color: rgba(58,58,58,0.8);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .fadeout .modal {
   background-color: #fff;
-  padding: 2em;
+  padding: 2em 2em 0 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.fadeout .modal .avatar {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: -50px;
+}
+.fadeout .modal .details {
+  position: relative;
+  top: -50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.fadeout .modal .details > * {
+  padding-top: 1em;
+}
+.fadeout .modal .details .profiles {
+  list-style: none;
+  display: flex;
+}
+.fadeout .modal .details .profiles li {
+  padding: 0.3em 0.5em 0 0.5em;
+  font-size: 2em;
 }

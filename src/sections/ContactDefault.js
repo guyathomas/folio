@@ -8,19 +8,33 @@ class Contact extends Component {
 
   render() {
   	const resume = this.props.resume;
+    const avatarStyle = {
+        background: 'url('+ resume.basics.picture + ')',
+        backgroundSize: 'cover'
+      }
+    const iconMap = {
+      "Email": "ion-ios-email",
+      "Linkedin": "ion-social-linkedin",
+      "Github": "ion-social-github"
+    }
+
     return (
       <div className="fadeout">
         <div className="modal">
-          <div className="avatar">Avatar Goes Here</div>
-          <div>{resume.basics.name}</div>
-          <div>{resume.basics.label}</div>
-          <ul>{resume.basics.profiles.map(profile => {
-            <li>
-              <li>{profile.network}</li>
-              <li><a href={profile.url}>{profile.username}</a></li>
-            </li>
-          })}
-          </ul>
+          <div className="avatar" style={avatarStyle} ></div>
+          <div className="details">
+            <h3>{resume.basics.name}</h3>
+            <div>{resume.basics.label}</div>
+            <ul className="profiles">{resume.basics.profiles.map(profile => {
+                if (iconMap[profile.network]) {
+                  return (<a href={profile.url} target="_blank"><li className={"icon " + iconMap[profile.network]}></li></a>)
+                } else {
+                  return (<li><a href={profile.url} target="_blank">{profile.network}</a></li>)
+                }
+              } 
+            )}
+            </ul>
+          </div>
         </div>
       </div>
     );

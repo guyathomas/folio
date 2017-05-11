@@ -24,6 +24,11 @@
             "network":"Github",
             "username":"stolemyusername",
             "url":"https://github.com/stolemyusername"
+         },
+         {
+            "network":"Email",
+            "username":"guy@guythomas.me",
+            "url":"mailto:guy@guythomas.me?Subject=Your%20Folio"
          }
       ]
    },

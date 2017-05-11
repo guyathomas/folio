@@ -1,15 +1,38 @@
+avataroffset = -50px
 .fadeout
 	height: 100vh;
 	width: 100vw;
 	position: fixed;
-	background-color: rgba(58, 58, 58, 0.38);
+	background-color: rgba(58, 58, 58, 0.8);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	.modal
 		background-color: white;
-		padding: 2em;
+		padding: 2em 2em 0 2em;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		.avatar
+			height: 100px
+			width: 100px
+			position: relative;
+			top: avataroffset;
+		.details
+			position: relative;
+			top: avataroffset;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			& > *
+				padding-top: 1em;
+			.profiles
+				list-style: none;
+				display: flex;
+				li
+					padding: 0.3em 0.5em 0 0.5em;
+					font-size: 2em;
 		
+
+		// position: relative;
+  //   
