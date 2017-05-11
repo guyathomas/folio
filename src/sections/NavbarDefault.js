@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import enhanceWithClickOutside from 'react-click-outside';
 
 const Dropdown = (props) => {
   return (
@@ -28,7 +29,11 @@ class Header extends Component {
     this.setState({dropdownExpanded: !dropdownExpanded})
   }
 
-  componentWillUpdate(test) {
+  handleClickOutside() {
+    this.setState({ dropdownExpanded: false })
+  }
+
+  componentWillUpdate() {
     //TODO: This is rather hacky. I would prefer not 
     //  to force the menu bar to go away by doing this
     this.state.dropdownExpanded = false 
@@ -54,4 +59,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default enhanceWithClickOutside(Header);

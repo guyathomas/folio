@@ -9,7 +9,6 @@ class Folio extends Component {
   }
 
   render() {
-  	console.log(resume.projects)
     return (
       <div className="folio">
       	<Hero resume={resume} />
