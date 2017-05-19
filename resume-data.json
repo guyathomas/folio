@@ -232,14 +232,33 @@
            "Designed an intuitive & lightweight UI using Angular."
          ],
          "longdesc" : "Existing directions services fail to take into account for the safety of the traveller. SafeHippo crunches through thousands of crime data points in San Francisco to provide safety-weighted walking directions through our lightweight Angular UI or through Google Maps."
-      }
+      },
+      {
+         "title":"Folio",
+         "url":"https://github.com/stolemyusername/folio",
+         "shortsummary":"A modular (and beautiful) developer portfolio",
+         "longsummary": "",
+         "screenshotURL":"https://camo.githubusercontent.com/4c1a6da897e40ffbc03498c3d8f53f0c976302b5/687474703a2f2f7265732e636c6f7564696e6172792e636f6d2f6471766c66706165762f696d6167652f75706c6f61642f76313439343439393137362f466f6c696f2d536d616c6c65725f73736d6a39622e676966",
+         "position":"Full Stack Software Engineer",
+         "keywords":[
+            "React",
+            "Stylus",
+            "Docker",
+            "AWS"
+         ],
+         "achievements":[
+           "Designed a responsive parallax portfolio page with React and Stylus.",
+           "Architected a modular app to allow developers to easily add or remove portfolio components."
+         ],
+         "longdesc" : "Existing directions services fail to take into account for the safety of the traveller. SafeHippo crunches through thousands of crime data points in San Francisco to provide safety-weighted walking directions through our lightweight Angular UI or through Google Maps."
+      }  
    ],
    "tech": {
       "languages": ["Javascript", "GoLang", "Ruby", "Python"],
-      "frameworks-&-libraries": ["React", "React Native", "Angular 1", "Node", "Django"],
+      "frameworks-&-libraries": ["React & React Native", "Redux", "Angular", "RxJS", "Node", "Django"],
       "databases-and-stores": ["MongoDB", "PostgreSQL", "Redis", "ElasticSearch"],
       "css-preprocessors": ["Stylus", "SASS", "LESS"],
-      "testing": ["Jest", "Mocha", "Chai"],
+      "testing": ["Jest", "Mocha & Chai"],
       "dev-tools": ["Docker", "Circle CI", "Webpack"],
       "deployment-platforms": ["AWS", "Heroku", "Digital Ocean"]
    },
